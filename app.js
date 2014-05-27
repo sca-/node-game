@@ -37,6 +37,7 @@ function handler (request, response) {
 
 // Listen for incoming connections from clients
 io.sockets.on('connection', function (socket) {
+	console.log('New user connected');
 
 	// Start listening for mouse move events
 	socket.on('mousemove', function (data) {
